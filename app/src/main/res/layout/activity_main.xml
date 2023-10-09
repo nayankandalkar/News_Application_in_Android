@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textview"/>
+
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="jai shri ram"
+    />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="News feed"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#03A9f4"
+                    android:id="@+id/text"></TextView>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="jai shri ram"
+                    android:layout_toRightOf="@+id/text"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="gone"
+                    android:id="@+id/edit"
+
+                    />
+                <Spinner
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:layout_toRightOf="@+id/text"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ram"
+                    android:layout_toRightOf="@+id/spinner"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/click"
+
+/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/include"
+            android:layout_below="@+id/toolbar"
+            app:tabTextColor="#618C8F"
+            app:tabSelectedTextColor="#03A9f4"
+            app:tabIndicatorColor="#03A9f4"
+            app:tabIndicatorHeight="3.5dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/white"
+            app:tabMode="scrollable"
+            >
+
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="home"
+                android:id="@+id/ram"
+                >
+
+            </com.google.android.material.tabs.TabItem>
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sport"
+                android:id="@+id/sport"
+                >
+
+            </com.google.android.material.tabs.TabItem>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="health"
+                android:id="@+id/health">
+
+            </com.google.android.material.tabs.TabItem>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="science"
+                android:id="@+id/science">
+
+            </com.google.android.material.tabs.TabItem>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="entertainment"
+                android:id="@+id/entertainment">
+
+            </com.google.android.material.tabs.TabItem>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="technology"
+                android:id="@+id/technology">
+
+            </com.google.android.material.tabs.TabItem>
+
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include"
+            android:layout_marginTop="0dp"
+            android:id="@+id/fragmentcontainer">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
